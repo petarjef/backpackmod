@@ -39,7 +39,7 @@ A small Fabric mod for Minecraft 26.3 that adds a craftable, wearable backpack.
 5. Start Minecraft with the Fabric profile.
 
 ## Known issues
-
+- None
 
 ## License
 CC0-1.0
