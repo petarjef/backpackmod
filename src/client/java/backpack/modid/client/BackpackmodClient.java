@@ -7,7 +7,10 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keymapping.v1.KeyMappingHelper;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
+import net.fabricmc.fabric.api.client.rendering.v1.LivingEntityRenderLayerRegistrationCallback;
 import net.minecraft.client.KeyMapping;
+import net.minecraft.client.renderer.entity.RenderLayerParent;
+import net.minecraft.client.renderer.entity.player.AvatarRenderer;
 
 public class BackpackmodClient implements ClientModInitializer {
 
@@ -15,6 +18,7 @@ public class BackpackmodClient implements ClientModInitializer {
 			Backpackmod.id("backpack"));
 
 	private static KeyMapping openKey;
+	@SuppressWarnings({"unchecked", "rawtypes"})
 
 	@Override
 	public void onInitializeClient() {
@@ -30,5 +34,11 @@ public class BackpackmodClient implements ClientModInitializer {
 				}
 			}
 		});
+		LivingEntityRenderLayerRegistrationCallback.EVENT.register(
+				(entityType, entityRenderer, registrationHelper, context) -> {
+					if (entityRenderer instanceof AvatarRenderer<?> avatarRenderer) {
+						registrationHelper.register(new BackpackLayer((RenderLayerParent) avatarRenderer));
+					}
+				});
 	}
 }
