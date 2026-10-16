@@ -14,6 +14,7 @@ import net.minecraft.world.SimpleMenuProvider;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.ChestMenu;
 import net.minecraft.world.inventory.MenuType;
+import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.ItemContainerContents;
@@ -44,6 +45,21 @@ public class BackpackItem extends Item {
 
         player.openMenu(new SimpleMenuProvider(
                 (id, inventory, p) -> new ChestMenu(MenuType.GENERIC_9x4, id, inventory, container, 4) {
+                    {
+
+                        for (int i = 0; i < SIZE; i++) {
+                            Slot old = this.slots.get(i);
+                            Slot replacement = new Slot(container, i, old.x, old.y) {
+                                @Override
+                                public boolean mayPlace(ItemStack stack) {
+                                    return !stack.is(ModItems.BACKPACK);
+                                }
+                            };
+                            replacement.index = i;
+                            this.slots.set(i, replacement);
+                        }
+                    }
+
                     @Override
                     public void removed(Player closer) {
                         super.removed(closer);

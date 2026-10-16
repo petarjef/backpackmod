@@ -7,6 +7,7 @@ A small Fabric mod for Minecraft 26.3 that adds a craftable, wearable backpack.
 - Contents are stored inside the item, so they survive dropping or moving it
 - Wear it in the chestplate slot and it shows on your back
 - Carry several backpacks and open any of them from your hand
+- Backpacks cannot be placed inside other backpacks
 
 ## Recipe
 
@@ -21,7 +22,7 @@ A small Fabric mod for Minecraft 26.3 that adds a craftable, wearable backpack.
 | Action | Input |
 |--------|-------|
 | Wear the backpack | Right-click while holding it |
-| Open worn backpack | B (rebindable in Controls) |
+| Open or close worn backpack | B (rebindable in Controls) |
 | Open held backpack | Shift + right-click |
 
 ## Requirements
