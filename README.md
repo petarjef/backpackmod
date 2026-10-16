@@ -38,8 +38,7 @@ A small Fabric mod for Minecraft 26.3 that adds a craftable, wearable backpack.
 5. Start Minecraft with the Fabric profile.
 
 ## Known issues
-- A backpack can currently be moved into itself while it is open.
-- The worn backpack is a flat texture; a 3D model is planned.
+- A backpack can currently be moved into itself while it is open. 
 
 ## License
 CC0-1.0
