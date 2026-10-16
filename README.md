@@ -31,10 +31,10 @@ A small Fabric mod for Minecraft 26.3 that adds a craftable, wearable backpack.
 - Java 25 (the launcher installs it automatically)
 
 ## Installation
-1. Install Fabric Loader for Minecraft 26.3.
-2. Download Fabric API for 26.3.
+1. Install [Fabric Loader](https://fabricmc.net/use/installer/) for Minecraft 26.3.
+2. Download [Fabric API](https://modrinth.com/mod/fabric-api) for 26.3.
 3. Download the latest `backpackmod` jar from the [Releases](https://github.com/petarjef/backpackmod/releases) page.
-4. Put both jars in your `mods` folder (on Windows: press Win + R and type `%appdata%\.minecraft\mods`).
+4. Put both jars (Fabric API and backpackmod) in your `mods` folder. On Windows, press Win + R and type `%appdata%\.minecraft\mods`.
 5. Start Minecraft with the Fabric profile.
 
 ## Known issues
