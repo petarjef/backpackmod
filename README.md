@@ -7,7 +7,7 @@ A small fabric mod for Minecraft 26.3 that adds craftable and equippable backpac
 - If you are holding item in hand Shift+Right click opens it and Right click equips it
 
 ## Recipe
-- Leather Iron Ingot Leather
+- Leather IronIngot Leather
 - Leather String Leather
 - Leather Leather Leather
 
@@ -25,10 +25,10 @@ A small fabric mod for Minecraft 26.3 that adds craftable and equippable backpac
 - Java 25
 
 ## Installation
-1. Install Fabric Loader and Fabric API for Minecraft 26.3.
+1. Install Fabric Loader and Fabric API for Minecraft 26.3. 
 2. Download the jar from the Releases page.
 3. Put it in your `.minecraft/mods` folder.
 
 ## Known issues
 - A backpack can currently be moved into itself while it is open.
-- The worn backpack is a flat texture; a 3D model is planned.
+- The worn backpack is a flat texture.
