@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": ["LIL", "LSL", "LLL"],
+  "key": {
+    "L": "minecraft:leather",
+    "S": "minecraft:string",
+    "I": "minecraft:iron_ingot"
+  },
+  "result": { "id": "backpackmod:backpack", "count": 1 }
+}

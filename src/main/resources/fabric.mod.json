@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "backpackmod",
+	"version": "${version}",
+	"name": "Backpack mod",
+	"description": "Adds a craftable backpack with 36 slots. Shift-right click opens the backpack in hand, B key opens the equipped backpack. Backpack goes to chestslot. ",
+
+	"authors": [
+		"Atlaz & ClaudeAI"
+	],
+	"contact": {
+		"homepage": "https://github.com/petarjef/backpackmod",
+		"sources": "https://github.com/petarjef/backpackmod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/backpackmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"backpack.modid.Backpackmod"
+		],
+		"client": [
+			"backpack.modid.client.BackpackmodClient"
+		]
+	},
+	"mixins": [
+		"backpackmod.mixins.json",
+		{
+			"config": "backpackmod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

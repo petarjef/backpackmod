@@ -1,0 +1,42 @@
+{
+  "credit": "Custom 16x16 backpack model",
+  "textures": {
+    "particle": "backpackmod:item/backpack",
+    "backpack": "backpackmod:item/backpack"
+  },
+  "elements": [
+    {
+      "from": [3, 2, 5],
+      "to": [13, 14, 11],
+      "faces": {
+        "north": { "uv": [0, 0, 16, 16], "texture": "#backpack" },
+        "south": { "uv": [0, 0, 16, 16], "texture": "#backpack" },
+        "east": { "uv": [0, 2, 6, 14], "texture": "#backpack" },
+        "west": { "uv": [10, 2, 16, 14], "texture": "#backpack" },
+        "up": { "uv": [3, 0, 13, 6], "texture": "#backpack" },
+        "down": { "uv": [3, 10, 13, 16], "texture": "#backpack" }
+      }
+    },
+    {
+      "from": [4, 1, 8],
+      "to": [12, 2, 10],
+      "faces": {
+        "north": { "uv": [4, 14, 12, 15], "texture": "#backpack" },
+        "south": { "uv": [4, 14, 12, 15], "texture": "#backpack" },
+        "east": { "uv": [10, 14, 12, 15], "texture": "#backpack" },
+        "west": { "uv": [4, 14, 6, 15], "texture": "#backpack" },
+        "up": { "uv": [4, 14, 12, 16], "texture": "#backpack" },
+        "down": { "uv": [4, 14, 12, 16], "texture": "#backpack" }
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": { "rotation": [0, 90, -35], "translation": [0, 2.5, 1], "scale": [0.65, 0.65, 0.65] },
+    "thirdperson_lefthand": { "rotation": [0, -90, 35], "translation": [0, 2.5, 1], "scale": [0.65, 0.65, 0.65] },
+    "firstperson_righthand": { "rotation": [0, 45, 0], "translation": [1, 2, 0], "scale": [0.75, 0.75, 0.75] },
+    "firstperson_lefthand": { "rotation": [0, 225, 0], "translation": [1, 2, 0], "scale": [0.75, 0.75, 0.75] },
+    "gui": { "rotation": [25, 135, 0], "translation": [0, 0, 0], "scale": [1, 1, 1] },
+    "ground": { "rotation": [0, 0, 0], "translation": [0, 3, 0], "scale": [0.5, 0.5, 0.5] },
+    "fixed": { "rotation": [0, 0, 0], "translation": [0, 0, 0], "scale": [0.8, 0.8, 0.8] }
+  }
+}
